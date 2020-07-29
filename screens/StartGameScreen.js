@@ -11,8 +11,20 @@ const StartGameScreen = () => {
 				<Text>Select a Number</Text>
 				<TextInput />
 				<View style={styles.buttonContainer}>
-					<Button title="Reset" onPress={() => {}} />
-					<Button title="Confirm" onPress={() => {}} />
+					<View style={styles.button}>
+						<Button
+							title="Reset"
+							onPress={() => {}}
+							color="#c717fc"
+						/>
+					</View>
+					<View style={styles.button}>
+						<Button
+							title="Confirm"
+							onPress={() => {}}
+							color="#f7287b"
+						/>
+					</View>
 				</View>
 			</Card>
 		</View>
@@ -39,6 +51,9 @@ const styles = StyleSheet.create({
 		width: '100%',
 		justifyContent: 'space-between',
 		paddingHorizontal: 15,
+	},
+	button: {
+		width: 100,
 	},
 });
 
